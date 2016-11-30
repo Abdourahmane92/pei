@@ -1,0 +1,516 @@
+//AdminLTE 2 Variables.less
+//=========================
+
+//PATHS
+//--------------------------------------------------------
+
+@boxed-layout-bg-image-path: "../img/boxed-bg.jpg";
+
+//COLORS
+//--------------------------------------------------------
+
+@light-blue: #527ebd;
+@danger:     #fe3907;
+@red:        #dc3c14;
+@green:      #32c832;
+@aqua:       #4bb4e6;
+@yellow:     #ffd200;
+@blue:       #0073b7;
+@navy:       #001F3F;
+@teal:       #39CCCC;
+@olive:      #50be87;
+@lime:       #01FF70;
+@orange:     #ff6e00;
+@orange-active:     #ff7a00;
+@fuchsia:    #F012BE;
+@purple:     #a885d8;
+@maroon:     #D81B60;
+@black:      #000;
+@gray:       #dedede;
+@pink:       #ffbee6;
+
+//LAYOUT
+//--------------------------------------------------------
+
+//Side bar and logo width
+@sidebar-width: 230px;
+//Boxed layout maximum width
+@boxed-layout-max-width: 1024px;
+//When the logo should go to the top of the screen
+@screen-header-collapse: @screen-xs-max;
+
+//Link colors (Aka: <a> tags)
+@link-color:       @text-color;
+@link-hover-color: @orange;
+
+//Body background (Affects main content background only)
+@body-bg: #ecf0f5;
+
+//SIDEBAR SKINS
+//--------------------------------------------------------
+
+//Dark sidebar
+@sidebar-dark-bg:                  #222d32;
+@sidebar-dark-hover-bg:            darken(@sidebar-dark-bg, 2%);
+@sidebar-dark-color:               lighten(@sidebar-dark-bg, 60%);
+@sidebar-dark-hover-color:         #fff;
+@sidebar-dark-submenu-bg:          lighten(@sidebar-dark-bg, 5%);
+@sidebar-dark-submenu-color:       lighten(@sidebar-dark-submenu-bg, 40%);
+@sidebar-dark-submenu-hover-color: #fff;
+
+//Light sidebar
+@sidebar-light-bg:                  #ffffff;
+@sidebar-light-hover-bg:            lighten(#f0f0f1, 1.5%);
+@sidebar-light-color:               #444;
+@sidebar-light-hover-color:         #000;
+@sidebar-light-submenu-bg:          @sidebar-light-hover-bg;
+@sidebar-light-submenu-color:       #777;
+@sidebar-light-submenu-hover-color: #000;
+
+//CONTROL SIDEBAR
+//--------------------------------------------------------
+@control-sidebar-width: @sidebar-width;
+
+
+//BOXES
+//--------------------------------------------------------
+@box-border-color:  #f4f4f4;
+@box-border-radius: 0;
+@box-footer-bg:     #fff;
+@box-boxshadow:     none;
+@box-padding:       10px;
+
+//Box variants
+@box-default-border-top-color: #d2d6de;
+
+//BUTTONS
+//--------------------------------------------------------
+@btn-boxshadow: none;
+
+//PROGRESS BARS
+//--------------------------------------------------------
+@progress-bar-border-radius:    1px;
+@progress-bar-sm-border-radius: 1px;
+@progress-bar-xs-border-radius: 1px;
+
+//FORMS
+//--------------------------------------------------------
+@input-radius: 0;
+
+//BUTTONS
+//--------------------------------------------------------
+
+//Border radius for non flat buttons
+@btn-border-radius: 0;
+
+//DIRECT CHAT
+//--------------------------------------------------------
+@direct-chat-height:                   250px;
+@direct-chat-default-msg-bg:           @gray;
+@direct-chat-default-font-color:       #444;
+@direct-chat-default-msg-border-color: @gray;
+
+
+//CHAT WIDGET
+//--------------------------------------------------------
+@attachment-border-radius: 3px;
+
+//TRANSITIONS SETTINGS
+//--------------------------------------------------------
+
+//Transition global options
+@transition-speed: .3s;
+@transition-fn:    ease-in-out;//cubic-bezier(0.32,1.25,0.375,1.15);
+
+@headings: ~".h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6";
+
+@navbar-height: 80px;
+
+//Icons
+@lte-icon-minus: "\e900";
+@lte-icon-plus: "\e901";
+@lte-icon-plus-circle: "\e902";
+@lte-icon-for-1-cinema-ticket: "\e903";
+@lte-icon-g: "\e904";
+@lte-icon-g2: "\e905";
+@lte-icon-g-plus: "\e906";
+@lte-icon-exclamation-message-important: "\e907";
+@lte-icon-formatage-chiffres-gris: "\e908";
+@lte-icon-address-book-edit-contact-dark: "\e909";
+@lte-icon-toolbar-deplacer-evenement: "\e90a";
+@lte-icon-pj-calendar: "\e90b";
+@lte-icon-reseau: "\e90c";
+@lte-icon-about-event: "\e90d";
+@lte-icon-accessability: "\e90e";
+@lte-icon-accessibility-cognition: "\e90f";
+@lte-icon-accessibility-dexterity: "\e910";
+@lte-icon-accessibility-hearing: "\e911";
+@lte-icon-accessibility-mobility: "\e912";
+@lte-icon-accessibility-speech: "\e913";
+@lte-icon-accessibility-vision: "\e914";
+@lte-icon-accessory-headphones: "\e915";
+@lte-icon-accessory-shop: "\e916";
+@lte-icon-add: "\e917";
+@lte-icon-add2: "\e918";
+@lte-icon-add-calendar: "\e919";
+@lte-icon-add-calendar2: "\e91a";
+@lte-icon-add-group: "\e91b";
+@lte-icon-address-book: "\e91c";
+@lte-icon-administrator: "\e91d";
+@lte-icon-advertising: "\e91e";
+@lte-icon-aeroplane: "\e91f";
+@lte-icon-affichage: "\e920";
+@lte-icon-affichage-liste: "\e921";
+@lte-icon-agriculture: "\e922";
+@lte-icon-airbox-auto: "\e923";
+@lte-icon-alarm-clock: "\e924";
+@lte-icon-alarm-multiplef: "\e925";
+@lte-icon-alert: "\e926";
+@lte-icon-antenna: "\e927";
+@lte-icon-antivirus: "\e928";
+@lte-icon-archive: "\e929";
+@lte-icon-arrow-down: "\e92a";
+@lte-icon-arrow-improvement: "\e92b";
+@lte-icon-arrow-refresh: "\e92c";
+@lte-icon-arrow-up: "\e92d";
+@lte-icon-assistance: "\e92e";
+@lte-icon-assistance-2: "\e92f";
+@lte-icon-attachment: "\e930";
+@lte-icon-avatar: "\e931";
+@lte-icon-avatar-support: "\e932";
+@lte-icon-back-iconcopy: "\e933";
+@lte-icon-banking: "\e934";
+@lte-icon-battery-charging: "\e935";
+@lte-icon-battery-empty: "\e936";
+@lte-icon-battery-full: "\e937";
+@lte-icon-battery-half: "\e938";
+@lte-icon-billboard: "\e939";
+@lte-icon-bill-euro: "\e93a";
+@lte-icon-birth: "\e93b";
+@lte-icon-birthday: "\e93c";
+@lte-icon-bluetooth: "\e93d";
+@lte-icon-book-download: "\e93e";
+@lte-icon-bookmark: "\e93f";
+@lte-icon-bookmark-smart: "\e940";
+@lte-icon-broadcast: "\e941";
+@lte-icon-business-telephonie: "\e942";
+@lte-icon-buy: "\e943";
+@lte-icon-buy-back-euro: "\e944";
+@lte-icon-buzz: "\e945";
+@lte-icon-calculator: "\e946";
+@lte-icon-calendar-30: "\e947";
+@lte-icon-calendar-day: "\e948";
+@lte-icon-calendar-month: "\e949";
+@lte-icon-calendar-week: "\e94a";
+@lte-icon-call: "\e94b";
+@lte-icon-call-forward: "\e94c";
+@lte-icon-call-log: "\e94d";
+@lte-icon-camera: "\e94e";
+@lte-icon-charger: "\e94f";
+@lte-icon-check-path1: "\e950";
+@lte-icon-check-path2: "\e951";
+@lte-icon-check-select-path1: "\e952";
+@lte-icon-check-select-path2: "\e953";
+@lte-icon-check-your-balance: "\e954";
+@lte-icon-child-protection: "\e955";
+@lte-icon-cineday-silhouette: "\e956";
+@lte-icon-clock: "\e957";
+@lte-icon-cloud-backup: "\e958";
+@lte-icon-comic: "\e959";
+@lte-icon-comments: "\e95a";
+@lte-icon-commercial-representitive: "\e95b";
+@lte-icon-community-sms: "\e95c";
+@lte-icon-construction: "\e95d";
+@lte-icon-contact-card: "\e95e";
+@lte-icon-control-centre: "\e95f";
+@lte-icon-control-my-data: "\e960";
+@lte-icon-copy: "\e961";
+@lte-icon-crane: "\e962";
+@lte-icon-crop: "\e963";
+@lte-icon-currency-euro: "\e964";
+@lte-icon-data-protection: "\e965";
+@lte-icon-data-services: "\e966";
+@lte-icon-decrease-test-size: "\e967";
+@lte-icon-delete: "\e968";
+@lte-icon-delete-cross: "\e969";
+@lte-icon-deplacer-groupe: "\e96a";
+@lte-icon-device-connected-printer: "\e96b";
+@lte-icon-device-desktop-computer: "\e96c";
+@lte-icon-device-desktop-computer-connected: "\e96d";
+@lte-icon-device-fixed-line-phone: "\e96e";
+@lte-icon-device-information: "\e96f";
+@lte-icon-device-laptop-computer: "\e970";
+@lte-icon-device-laptop-computer-connected: "\e971";
+@lte-icon-device-manager: "\e972";
+@lte-icon-device-managmentexpress: "\e973";
+@lte-icon-device-smart-phone: "\e974";
+@lte-icon-device-tablet: "\e975";
+@lte-icon-device-tablet-connected: "\e976";
+@lte-icon-device-tv: "\e977";
+@lte-icon-dialler: "\e978";
+@lte-icon-disable-apps: "\e979";
+@lte-icon-discovery-offer: "\e97a";
+@lte-icon-discussion-author: "\e97b";
+@lte-icon-docs: "\e97c";
+@lte-icon-document-stack: "\e97d";
+@lte-icon-document-word: "\e97e";
+@lte-icon-document-zip: "\e97f";
+@lte-icon-donations: "\e980";
+@lte-icon-draft: "\e981";
+@lte-icon-ebook: "\e982";
+@lte-icon-edashboard: "\e983";
+@lte-icon-edit-contacts: "\e984";
+@lte-icon-edit-draft: "\e985";
+@lte-icon-edit-email: "\e986";
+@lte-icon-edit-image: "\e987";
+@lte-icon-edit-message: "\e988";
+@lte-icon-electric-car: "\e989";
+@lte-icon-electricity-provider: "\e98a";
+@lte-icon-elevator: "\e98b";
+@lte-icon-email: "\e98c";
+@lte-icon-emap: "\e98d";
+@lte-icon-emergency-servcice: "\e98e";
+@lte-icon-emoticone: "\e98f";
+@lte-icon-employees-1: "\e990";
+@lte-icon-epg: "\e991";
+@lte-icon-event-agenda: "\e992";
+@lte-icon-event-organiser: "\e993";
+@lte-icon-event-speaker: "\e994";
+@lte-icon-excel: "\e995";
+@lte-icon-expert: "\e996";
+@lte-icon-family-place: "\e997";
+@lte-icon-favourite: "\e998";
+@lte-icon-filter: "\e999";
+@lte-icon-finance: "\e99a";
+@lte-icon-fire: "\e99b";
+@lte-icon-flexible-storage: "\e99c";
+@lte-icon-folder-camera: "\e99d";
+@lte-icon-folder-document: "\e99e";
+@lte-icon-folder-favourite: "\e99f";
+@lte-icon-folder-sd: "\e9a0";
+@lte-icon-football: "\e9a1";
+@lte-icon-forms-edit: "\e9a2";
+@lte-icon-forward: "\e9a3";
+@lte-icon-free-tag: "\e9a4";
+@lte-icon-free-up-space: "\e9a5";
+@lte-icon-front-end-dashboard: "\e9a6";
+@lte-icon-full-screen-view: "\e9a7";
+@lte-icon-gallery: "\e9a8";
+@lte-icon-gathering: "\e9a9";
+@lte-icon-gauge-capacity: "\e9aa";
+@lte-icon-gauge-counter: "\e9ab";
+@lte-icon-gauge-mon-reseau: "\e9ac";
+@lte-icon-gauge-rate: "\e9ad";
+@lte-icon-geolocation: "\e9ae";
+@lte-icon-hands-free: "\e9af";
+@lte-icon-hdmi-card: "\e9b0";
+@lte-icon-health: "\e9b1";
+@lte-icon-healthcare: "\e9b2";
+@lte-icon-health-monitor: "\e9b3";
+@lte-icon-help-guide: "\e9b4";
+@lte-icon-history: "\e9b5";
+@lte-icon-home: "\e9b6";
+@lte-icon-home-alarm: "\e9b7";
+@lte-icon-homescreen: "\e9b8";
+@lte-icon-hospital: "\e9b9";
+@lte-icon-hotel: "\e9ba";
+@lte-icon-hourglass: "\e9bb";
+@lte-icon-image: "\e9bc";
+@lte-icon-image-file: "\e9bd";
+@lte-icon-improvement: "\e9be";
+@lte-icon-inbox: "\e9bf";
+@lte-icon-incoming-call-curved-arrow: "\e9c0";
+@lte-icon-increase-test-size: "\e9c1";
+@lte-icon-info: "\e9c2";
+@lte-icon-international-globe: "\e9c3";
+@lte-icon-internet: "\e9c4";
+@lte-icon-internet-browser: "\e9c5";
+@lte-icon-keeper: "\e9c6";
+@lte-icon-keyboard: "\e9c7";
+@lte-icon-keypad: "\e9c8";
+@lte-icon-language: "\e9c9";
+@lte-icon-lightbulb-sh: "\e9ca";
+@lte-icon-ligue-1: "\e9cb";
+@lte-icon-livebox: "\e9cc";
+@lte-icon-livebox-phone: "\e9cd";
+@lte-icon-location-pin-compass: "\e9ce";
+@lte-icon-lock: "\e9cf";
+@lte-icon-lock-screen-settings: "\e9d0";
+@lte-icon-logistics: "\e9d1";
+@lte-icon-map: "\e9d2";
+@lte-icon-map-pin: "\e9d3";
+@lte-icon-medical-chart: "\e9d4";
+@lte-icon-menu: "\e9d5";
+@lte-icon-messages--copie: "\e9d6";
+@lte-icon-messages: "\e9d7";
+@lte-icon-messaging: "\e9d8";
+@lte-icon-messaging-compose-sms: "\e9d9";
+@lte-icon-messaging-unified: "\e9da";
+@lte-icon-messaging-untitled-compose: "\e9db";
+@lte-icon-microphone: "\e9dc";
+@lte-icon-mini-games: "\e9dd";
+@lte-icon-mirroring: "\e9de";
+@lte-icon-missed-call-boxed-arrow: "\e9df";
+@lte-icon-mobile-applications: "\e9e0";
+@lte-icon-mobile-data-toggle: "\e9e1";
+@lte-icon-mobile-insurance: "\e9e2";
+@lte-icon-mobile-network-coverage: "\e9e3";
+@lte-icon-mobile-security: "\e9e4";
+@lte-icon-mobile-setup: "\e9e5";
+@lte-icon-mon-reseau: "\e9e6";
+@lte-icon-more-dots: "\e9e7";
+@lte-icon-move-to-folder: "\e9e8";
+@lte-icon-multilevel: "\e9e9";
+@lte-icon-multiple-timezone: "\e9ea";
+@lte-icon-multi-sim: "\e9eb";
+@lte-icon-music-artist: "\e9ec";
+@lte-icon-music-file: "\e9ed";
+@lte-icon-music-player: "\e9ee";
+@lte-icon-my-account: "\e9ef";
+@lte-icon-my-bill-uk: "\e9f0";
+@lte-icon-my-boutique: "\e9f1";
+@lte-icon-my-essential: "\e9f2";
+@lte-icon-my-essential-tablet: "\e9f3";
+@lte-icon-my-livebox: "\e9f4";
+@lte-icon-my-media: "\e9f5";
+@lte-icon-my-orange: "\e9f6";
+@lte-icon-my-plug-silhouette: "\e9f7";
+@lte-icon-networks: "\e9f8";
+@lte-icon-newspaper: "\e9f9";
+@lte-icon-nfc: "\e9fa";
+@lte-icon-no-sim: "\e9fb";
+@lte-icon-notification: "\e9fc";
+@lte-icon-notification-bell: "\e9fd";
+@lte-icon-numero-unique: "\e9fe";
+@lte-icon-office: "\e9ff";
+@lte-icon-oil-and-gas: "\ea00";
+@lte-icon-online-help: "\ea01";
+@lte-icon-orange-assistant: "\ea02";
+@lte-icon-orange-cash: "\ea03";
+@lte-icon-orange-corporate: "\ea04";
+@lte-icon-orange-events: "\ea05";
+@lte-icon-orange-experts-class-training: "\ea06";
+@lte-icon-orange-experts-copy-keep: "\ea07";
+@lte-icon-orange-experts-expert: "\ea08";
+@lte-icon-orange-experts-insurance: "\ea09";
+@lte-icon-orange-experts-orange-business-consultant: "\ea0a";
+@lte-icon-orange-experts-orange-startup-smartphone: "\ea0b";
+@lte-icon-orange-experts-recycle: "\ea0c";
+@lte-icon-orange-experts-repair: "\ea0d";
+@lte-icon-orange-experts-tranquil: "\ea0e";
+@lte-icon-orange-gesture: "\ea0f";
+@lte-icon-orange-messenger: "\ea10";
+@lte-icon-orange-pro: "\ea11";
+@lte-icon-orange-protect: "\ea12";
+@lte-icon-orange-radio: "\ea13";
+@lte-icon-orange-wallet: "\ea14";
+@lte-icon-orange-wifi: "\ea15";
+@lte-icon-organisation: "\ea16";
+@lte-icon-outbox: "\ea17";
+@lte-icon-outdoor-sports-mountain-biking: "\ea18";
+@lte-icon-outdoor-sports-skiing: "\ea19";
+@lte-icon-parental-control: "\ea1a";
+@lte-icon-pause: "\ea1b";
+@lte-icon-pdf-file: "\ea1c";
+@lte-icon-pen: "\ea1d";
+@lte-icon-pencil: "\ea1e";
+@lte-icon-phone-advisor: "\ea1f";
+@lte-icon-picture-messaging: "\ea20";
+@lte-icon-pioneering: "\ea21";
+@lte-icon-pj-fax: "\ea22";
+@lte-icon-pj-mail: "\ea23";
+@lte-icon-play: "\ea24";
+@lte-icon-playmode-random: "\ea25";
+@lte-icon-power: "\ea26";
+@lte-icon-powerpoint-file: "\ea27";
+@lte-icon-previous: "\ea28";
+@lte-icon-printer: "\ea29";
+@lte-icon-public-transport: "\ea2a";
+@lte-icon-recommend: "\ea2b";
+@lte-icon-record: "\ea2c";
+@lte-icon-relationship--copie: "\ea2d";
+@lte-icon-relationship: "\ea2e";
+@lte-icon-religious-donation: "\ea2f";
+@lte-icon-reload: "\ea30";
+@lte-icon-remote-control: "\ea31";
+@lte-icon-responsible: "\ea32";
+@lte-icon-restore-to-phone: "\ea33";
+@lte-icon-rewards: "\ea34";
+@lte-icon-scan-ticket: "\ea35";
+@lte-icon-sd-card: "\ea36";
+@lte-icon-search: "\ea37";
+@lte-icon-servers: "\ea38";
+@lte-icon-settings: "\ea39";
+@lte-icon-setup-and-repair: "\ea3a";
+@lte-icon-setup-and-repair-cog: "\ea3b";
+@lte-icon-setup-internet: "\ea3c";
+@lte-icon-share: "\ea3d";
+@lte-icon-shipping: "\ea3e";
+@lte-icon-shop-pin: "\ea3f";
+@lte-icon-shop-subscriptions: "\ea40";
+@lte-icon-signal-boost: "\ea41";
+@lte-icon-sim: "\ea42";
+@lte-icon-simple-mode: "\ea43";
+@lte-icon-smart-home: "\ea44";
+@lte-icon-smart-lightswitch: "\ea45";
+@lte-icon-smart-tap: "\ea46";
+@lte-icon-social-network: "\ea47";
+@lte-icon-software-update: "\ea48";
+@lte-icon-sous-menu: "\ea49";
+@lte-icon-spam: "\ea4a";
+@lte-icon-start-services: "\ea4b";
+@lte-icon-startup-wizard: "\ea4c";
+@lte-icon-subscription-package-path1: "\ea4d";
+@lte-icon-subscription-package-path2: "\ea4e";
+@lte-icon-subscription-package-path3: "\ea4f";
+@lte-icon-subscription-package-path4: "\ea50";
+@lte-icon-subscription-package-path5: "\ea51";
+@lte-icon-support: "\ea52";
+@lte-icon-surveillance-camera: "\ea53";
+@lte-icon-target-location: "\ea54";
+@lte-icon-tariff: "\ea55";
+@lte-icon-task-list: "\ea56";
+@lte-icon-temperature: "\ea57";
+@lte-icon-terms-conditions: "\ea58";
+@lte-icon-text-alerts: "\ea59";
+@lte-icon-thumb-down: "\ea5a";
+@lte-icon-thumb-up: "\ea5b";
+@lte-icon-tick: "\ea5c";
+@lte-icon-tick-circle: "\ea5d";
+@lte-icon-tickets: "\ea5e";
+@lte-icon-top-up-dollar: "\ea5f";
+@lte-icon-top-up-euro: "\ea60";
+@lte-icon-top-up-uk-bank: "\ea61";
+@lte-icon-touch-screen: "\ea62";
+@lte-icon-town: "\ea63";
+@lte-icon-townhall: "\ea64";
+@lte-icon-track-your-delivery: "\ea65";
+@lte-icon-track-your-order: "\ea66";
+@lte-icon-trash: "\ea67";
+@lte-icon-tv-plus: "\ea68";
+@lte-icon-unique: "\ea69";
+@lte-icon-unknown: "\ea6a";
+@lte-icon-unlocked: "\ea6b";
+@lte-icon-unmissable: "\ea6c";
+@lte-icon-upload: "\ea6d";
+@lte-icon-usb: "\ea6e";
+@lte-icon-usb-key: "\ea6f";
+@lte-icon-vehicle: "\ea70";
+@lte-icon-video: "\ea71";
+@lte-icon-video-file: "\ea72";
+@lte-icon-video-meeting: "\ea73";
+@lte-icon-virtual-gamepad-silhouette: "\ea74";
+@lte-icon-visual-voicemail: "\ea75";
+@lte-icon-vod-portrait: "\ea76";
+@lte-icon-volte: "\ea77";
+@lte-icon-volume-high: "\ea78";
+@lte-icon-volume-low: "\ea79";
+@lte-icon-volume-mid: "\ea7a";
+@lte-icon-volume-none: "\ea7b";
+@lte-icon-vowifi: "\ea7c";
+@lte-icon-web-cam: "\ea7d";
+@lte-icon-wedding: "\ea7e";
+@lte-icon-wifi: "\ea7f";
+@lte-icon-zoom-in: "\ea80";
+@lte-icon-zoom-out: "\ea81";
+

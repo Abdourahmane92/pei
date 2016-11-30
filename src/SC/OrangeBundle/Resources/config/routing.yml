@@ -1,0 +1,11 @@
+sc_orange_homepage:
+    path:     /
+    defaults: { _controller: SCOrangeBundle:Default:index }
+
+sc_orange_superadmin_index:
+    path:     /superadmin/index
+    defaults: { _controller: SCOrangeBundle:Superadmin:index }
+
+sc_orange_admin_index:
+    path:     /admin/index
+    defaults: { _controller: SCOrangeBundle:Admin:index }

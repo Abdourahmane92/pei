@@ -1,0 +1,51 @@
+/*
+ * Component: alert
+ * ----------------
+ */
+
+.alert {
+  .border-radius(0);
+  border: none;
+  margin: 0 0 20px 0;
+  padding: 10px 20px;
+  .clearfix();
+  
+  h4 {
+    font-weight: 700;
+  }
+  .icon {
+    margin-right: 10px;
+  }
+  .close {
+    top: 0;
+    right: 0;
+    .opacity(1);
+    text-shadow: none;
+    &:hover {
+      .opacity(.8);
+    }
+  }
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+}
+
+//Alert Variants
+.alert-success {
+  &:extend(.bg-green);
+  border-color: darken(@green, 5%);
+}
+.alert-danger,
+.alert-error {
+  &:extend(.bg-danger);
+  border-color: @danger;
+}
+.alert-warning {
+  &:extend(.bg-warning);
+  border-color: @brand-warning;
+}
+.alert-info {
+  &:extend(.bg-info);
+  border-color: @brand-info;
+}
