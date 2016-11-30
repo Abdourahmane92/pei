@@ -1,9 +1,9 @@
-# Sama-Carnet-Web-App
+
 
 Installation : 
 
 composer install
 
-Nom de la base de données : samacarnet
+Nom de la base de données : yenna.sql
 
-PJ : samacarnet.sql
+
